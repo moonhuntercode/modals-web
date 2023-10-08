@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link
+               rel="stylesheet"
+               href="main.css"
+          />
+          <title>web1</title>
+     </head>
+     <body id="container">
+          <div
+               onclick="modal.ocultar_Modal_uno()"
+               id="fondo_of_dialog"
+          ></div>
+          <main>
+               <article
+                    id="ventana_modal"
+               >
+                    <button
+                         onclick="modal.ocultar_Modal_uno()"
+                    >
+                         Close
+                    </button>
+                    <p>
+                         This modal
+                         dialog has
+                         a groovy
+                         backdrop!
+                    </p>
+               </article>
+               <button
+                    id="showModalBtn"
+                    onclick="modal.mostrarVentana_uno()"
+                    onkeydown="modal.ocultar_Modal_uno_con_escape()"
+               >
+                    Show the dialog
+               </button>
+          </main>
+          <script src="./main.js"></script>
+     </body>
+</html>
