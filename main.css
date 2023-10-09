@@ -8,6 +8,7 @@ body {
      display: flex;
      flex-flow: column wrap;
      place-content: center;
+     place-items: center;
      text-align: center;
      position: relative;
      z-index: 1;
@@ -18,11 +19,15 @@ body {
      box-sizing: border-box;
 }
 main {
-     position: relative;
+     width: 100%;
+
      z-index: 2;
-     display: inline;
+     position: relative;
+     display: flex;
+     flex-flow: column wrap;
+     place-content: center;
      text-align: center;
-     height: 100px;
+     place-items: center;
 }
 button {
      font-size: 1.2rem;
@@ -44,7 +49,7 @@ dialog::backdrop {
      background: blueviolet;
      color: white;
      border: 5px solid black;
-     width: 569px;
+     width: 369px;
      height: 100px;
      z-index: 3;
      position: absolute;
